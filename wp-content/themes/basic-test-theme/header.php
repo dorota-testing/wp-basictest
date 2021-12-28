@@ -16,10 +16,13 @@
   <body>
     <header>
       <div class="container">
-        
         <nav id="site-navigation" class="main-navigation">
           <div class="logo-wrap">
-            <div class="logo">LOGO</div>
+            <div class="logo">
+              <a href="<?= get_home_url() ?>">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/group.svg">
+              </a>
+            </div>
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
               <span></span>
               <span></span>
