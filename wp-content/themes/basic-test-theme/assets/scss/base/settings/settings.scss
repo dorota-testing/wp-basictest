@@ -1,0 +1,60 @@
+// font
+@font-face {
+  font-family: "proximanova";
+  src: url("assets/fonts/proximanova_regular.woff2") format('woff');
+}
+
+@font-face {
+  font-family: "proximanova";
+  src: url("assets/fonts/proximanova_semibold.woff2") format('woff');
+  font-weight: bold;
+}
+
+$font__main: proximanova, sans-serif;
+
+//colours
+$color__text-white: #ffffff;
+$color__text-blue: #6db1d4;
+
+//links
+a, a:hover, a:visited, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+//typography
+body {
+  font-family: $font__main;
+  font-size: 12px;
+}
+h1, h2, h3, h4 {
+  font-weight: bold;
+  margin: 0;
+}
+h1 {
+  font-size: 44px;
+}
+h2 {
+  font-size: 35px;
+}
+p {
+  margin: 0;
+}
+//responsive layout
+.container {
+  width: 100%;
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+//sticky footer. This assumes that in body there will always be only 3 elements (header, main and footer).
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

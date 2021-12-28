@@ -1,0 +1,35 @@
+/*
+Theme Name: Basic Test Theme
+Theme URI: 
+Author: Dorota Lewinska
+Author URI: 
+Description: Simple wordpress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: btt
+*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+
+/*--------------------------------------------------------------
+# All blocks
+--------------------------------------------------------------*/
+@import "blocks/blocks";

@@ -1,0 +1,20 @@
+footer {
+  .footer-top {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      grid-gap: 0;
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 2fr 2fr;
+      }
+      @media screen and (max-width: 400px) {
+        grid-template-columns: 1fr;
+      }
+      ul {
+        list-style: none;
+        padding-left: 23px;
+        margin: 0;
+      }
+    }
+  }
+}
