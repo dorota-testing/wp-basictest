@@ -35,14 +35,18 @@
         ?>
       </div>
       <div class="footer-column">
-        <h3>Last Column</h3>
-        <span>Today is <?=date('d M Y');?></span>
+        <h3>Newsletter sign up</h3>
+        <input type="text" placeholder="Enter email*">
+        <p>
+          <a href="tel:01234567890">01234 567 890</a>
+          <a href="mailto:hello@company.co.uk">hello@company.co.uk</a>
+        </p>
       </div>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
-      <p>Copy right and other text</p>
+      <p>Copy right Company name | Website design and development by Clicky</p>
     </div>
   </div>
 </footer>
