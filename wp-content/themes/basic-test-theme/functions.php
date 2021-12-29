@@ -42,22 +42,10 @@ function btt_theme_setup(){
 				'widgets',
 			) );
   
-	/*
-	 * Enable support for Post Formats.
-	 *
-	 * See: https://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-		'gallery',
-		'audio',
-	) );
+	// Gutenberg custom stylesheet
+	add_theme_support('editor-styles');
+	add_editor_style( 'style.css' ); // make sure path reflects where the file is located
 }
-
 add_action('after_setup_theme', 'btt_theme_setup');
 
 
@@ -164,3 +152,12 @@ if ( ! function_exists( 'basic_test_theme_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+
+function basic_test_theme_get_img_source ($img_id, $size='large') {
+	$src = '';
+	$arrImage = wp_get_attachment_image_src( $img_id, $size);
+	if(isset($arrImage[0])){
+		$src = $arrImage[0];
+	}
+	return $src;
+}
