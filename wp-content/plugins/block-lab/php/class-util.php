@@ -28,7 +28,8 @@ class Util extends Component_Abstract {
 	 * @return bool
 	 */
 	public function is_pro() {
-		return $this->plugin->admin->license->is_valid();
+		//return $this->plugin->admin->license->is_valid();
+		return true;
 	}
 
 	/**
