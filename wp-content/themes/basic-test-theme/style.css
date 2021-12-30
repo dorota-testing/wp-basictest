@@ -728,4 +728,73 @@ footer .footer-bottom {
   object-position: center top;
 }
 
+.block-person-cards {
+  margin: 130px 0;
+}
+@media screen and (max-width: 1440px) {
+  .block-person-cards {
+    margin: 9vw 0;
+  }
+}
+.block-person-cards .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 90px;
+  row-gap: 80px;
+  padding: 0 120px;
+}
+@media screen and (max-width: 1440px) {
+  .block-person-cards .container {
+    column-gap: 6.25vw;
+    padding: 0 8.3vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block-person-cards .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .block-person-cards .container {
+    grid-template-columns: 1fr;
+  }
+}
+.block-person-cards .container .person-card {
+  text-align: center;
+}
+.block-person-cards .container .person-card img {
+  border: 7px solid #6db1d4;
+  border-radius: 66px;
+  width: 130px;
+  height: 130px;
+  object-position: center;
+  object-fit: cover;
+  margin-bottom: -75px;
+}
+.block-person-cards .container .person-card .text-wrap {
+  padding: 120px 46px 30px;
+  box-shadow: 0px 5px 15px #ededed;
+  min-height: 160px;
+  box-sizing: content-box;
+}
+@media screen and (max-width: 1440px) {
+  .block-person-cards .container .person-card .text-wrap {
+    padding: 120px 3.2vw 30px;
+    min-height: calc( 515px - 25vw);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block-person-cards .container .person-card .text-wrap {
+    min-height: calc( 330px - 20vw);
+  }
+}
+@media screen and (max-width: 600px) {
+  .block-person-cards .container .person-card .text-wrap {
+    min-height: auto;
+  }
+}
+.block-person-cards .container .person-card .text-wrap p {
+  line-height: 2;
+}
+
 /*# sourceMappingURL=style.css.map */
