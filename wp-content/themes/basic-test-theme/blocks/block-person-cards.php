@@ -11,8 +11,6 @@ $arrPersons = array_map(function($k) {
   $result = substr($excerpt, 0, strrpos($excerpt, ' '));
  
   $img_src = get_the_post_thumbnail_url( $k['person']['id'] );
-  //echo('<pre>'); print_r($person);  echo('</pre>');
- // die('<br>');
   $k['excerpt'] = $result;
   $k['img_src'] = $img_src;
   unset($k['person']);

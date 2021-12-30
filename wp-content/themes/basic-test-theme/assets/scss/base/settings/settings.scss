@@ -31,6 +31,7 @@ a, a:hover, a:visited, a:focus {
 body {
   font-family: $font__main;
   font-size: 16px;
+  overflow-x: hidden;
 }
 h1, h2, h3, h4 {
   font-weight: bold;
@@ -49,10 +50,10 @@ p {
 }
 //responsive layout
 .container {
-  width: 100%;
+  width: 100vw;
   @media screen and (min-width: 1440px) {
-    width: 1440px;
     margin: 0 auto;
+    width: 1440px;
   }
 }
 
