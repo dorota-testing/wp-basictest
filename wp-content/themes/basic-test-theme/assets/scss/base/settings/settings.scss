@@ -56,7 +56,18 @@ p {
     width: 1440px;
   }
 }
-
+// this centers elements that are not blocks
+article  {
+  &>*:not(section){
+    width: 100vw;
+    padding: 0 8vw;
+    @media screen and (min-width: 1440px) {
+      margin: 0 auto;
+      width: 1440px;
+      padding: 0 77px;
+    }
+  }
+}
 //sticky footer. This assumes that in body there will always be only 3 elements (header, main and footer).
 html {
   height: 100%;
