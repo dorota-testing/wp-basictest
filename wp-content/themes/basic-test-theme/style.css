@@ -754,8 +754,8 @@ footer .footer-bottom {
 }
 @media screen and (max-width: 900px) {
   .block-person-slider .container .person-slide {
-    min-height: 40vw;
-    height: auto;
+    margin-top: calc( 60px - 3vw);
+    height: calc( 315px - 11vw);
   }
 }
 .block-person-slider .container .person-slide.slick-center {
@@ -771,8 +771,7 @@ footer .footer-bottom {
 }
 @media screen and (max-width: 900px) {
   .block-person-slider .container .person-slide.slick-center {
-    min-height: 50vw;
-    height: auto;
+    height: calc( 400px - 11vw);
   }
 }
 .block-person-slider .container .person-slide.slick-center .text-wrap img {
@@ -785,6 +784,7 @@ footer .footer-bottom {
     border-radius: 5.5vw;
     width: 11.1vw;
     height: 11.1vw;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -812,7 +812,7 @@ footer .footer-bottom {
 }
 @media screen and (max-width: 1440px) {
   .block-person-slider .container .person-slide .text-wrap {
-    padding: 0 4.8vw;
+    padding: 0 calc( 4.8vw * 0.8);
   }
 }
 .block-person-slider .container .person-slide .text-wrap img {
@@ -833,7 +833,9 @@ footer .footer-bottom {
 }
 @media screen and (max-width: 900px) {
   .block-person-slider .container .person-slide .text-wrap img {
-    display: none;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
   }
 }
 .block-person-slider .container .person-slide .text-wrap p {
