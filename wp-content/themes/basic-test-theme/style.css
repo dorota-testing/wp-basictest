@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Basic Test Theme
 Theme URI: 
@@ -727,6 +728,74 @@ footer .footer-bottom {
   width: 100%;
   object-fit: cover;
   object-position: center top;
+}
+
+.block-accordion {
+  color: #ffffff;
+  background: #70b4d7;
+  background: linear-gradient(180deg, #194777, #70b4d7);
+  margin: 130px 0;
+}
+@media screen and (max-width: 1440px) {
+  .block-accordion {
+    margin: 9vw 0;
+  }
+}
+.block-accordion .container {
+  padding: 100px 260px;
+}
+@media screen and (max-width: 1440px) {
+  .block-accordion .container {
+    padding: 7vw 18vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block-accordion .container {
+    padding: 7vw 8vw;
+  }
+}
+.block-accordion .container h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 1440px) {
+  .block-accordion .container h2 {
+    margin-bottom: 5.5vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block-accordion .container h2 {
+    font-size: 35px;
+  }
+}
+.block-accordion .container details {
+  border-bottom: 2px solid #6db1d4;
+}
+.block-accordion .container details:first-of-type {
+  border-top: 2px solid #6db1d4;
+}
+.block-accordion .container details summary {
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+}
+.block-accordion .container details summary::after {
+  position: absolute;
+  content: "+";
+  top: 10px;
+  right: 20px;
+  font-size: 32px;
+}
+.block-accordion .container details summary::marker {
+  content: "";
+}
+.block-accordion .container details[open] summary::after {
+  content: "–";
+  font-size: 24px;
+}
+.block-accordion .container details p {
+  padding: 15px;
 }
 
 .block-person-slider {

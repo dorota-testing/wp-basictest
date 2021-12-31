@@ -1,0 +1,60 @@
+.block-accordion {
+  color: $color__text-white;
+  background: $color__navy-blue;
+  background: linear-gradient(180deg, $color__navy-blue-light, $color__navy-blue);
+  margin: 130px 0;
+  @media screen and (max-width: 1440px) {
+    margin: 9vw 0;
+  }
+  .container {
+    padding: 100px 260px;
+    @media screen and (max-width: 1440px) {
+      padding: 7vw 18vw;
+    }
+    @media screen and (max-width: 1000px) {
+      padding: 7vw 8vw;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 80px;
+      @media screen and (max-width: 1440px) {
+        margin-bottom: 5.5vw;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 35px;
+      }
+    }
+    details {
+      &:first-of-type {
+        border-top: 2px solid $color__text-blue;
+      }
+      border-bottom: 2px solid $color__text-blue;
+      summary {
+        padding: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "+";
+          top: 10px;
+          right: 20px;
+          font-size: 32px;
+        }
+      
+        &::marker {
+          content: '';
+        }
+      }
+      &[open] {
+        summary::after {
+          content: "–";
+          font-size: 24px;
+        }
+      }
+      p {
+        padding: 15px;
+      }
+    }
+  }
+}
